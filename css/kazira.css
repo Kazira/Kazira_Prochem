@@ -1,0 +1,775 @@
+@import url('../css/fonts.css');
+
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+}
+
+@media (max-width:950px) {
+
+    
+
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: var(--Lexend);
+}
+
+h3 {
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span {
+    font-family: var(--Abel);
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+p {
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.nav {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 0 3rem;
+    height: 0rem;
+    width: 1300px;
+    min-height: 10vh;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.collapse {
+    height: 30rem;
+}
+/**/
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+   
+  
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: rgba(53, 110, 233, 0.781);
+}
+
+.nav .nav-items .nav-link:hover a{
+    
+    color: var(--white);
+}
+/**/
+
+
+
+
+.nav .btnlogin {
+
+
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    transition: ease-in-out 0.3s;
+
+    padding: 5px 5px 5px 5px;
+    height: 35px;
+    width: 8vw;
+    margin-left: 6%;
+    margin-top: 1%;
+
+    color: white;
+    background-color: rgba(53, 110, 233, 0.781);
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+.nav .btnlogin:hover {
+    cursor: pointer;
+    background-color: rgba(53, 110, 233, 0.589);
+}
+
+.nav .nav-brand .prohemlogo {
+    margin-left: -5%;
+    padding: 0 1rem;
+    height: 0rem;
+    min-height: 10vh;
+}
+
+.nav .nav-brand .prohemlogo:hover {
+    cursor: pointer;
+}
+
+.nav .social {
+    padding: 1.4rem 0
+}
+
+.nav i {
+    padding: 0 .2rem;
+    color: #740d0d;
+}
+
+.nav .social i:hover {
+    color: #1d1b1b;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+main .site-title {
+    background-color: rgba(20, 107, 207, 0.8);
+    background: url('../assets/1.PNG');
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-left: -3%;
+}
+
+main .site-title .site-background {
+    padding-top: 28rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,
+h3 {
+    margin: .3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: #438ad3;
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* --------x------ Site title --------x------- */
+
+/********************************************************************
+|||||||||||||||||||||||||||||||| #Cursos||||||||||||||||||||                           
+*********************************************************************/
+.cursos-section-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(53, 110, 233, 0.781);
+    border-top: 2px solid white;
+
+
+
+}
+
+.cursos-section-title {
+    text-align: center;
+    margin-top: -10%;
+    margin-left: 11%;
+
+}
+
+
+
+.cursos-section-bg h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.cursos-section-title h3 span {
+    color: #f1d849;
+}
+
+
+
+
+.cursos-section-bg .info {
+    font-family: var(--Lexend);
+    font-size: 20px;
+    text-align: center;
+    width: 60vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.info .txt {
+    color: white;
+}
+
+
+
+.cur {
+    background: cover;
+
+    height: 50vh;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.cur div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.cur:hover {
+    letter-spacing: 5px;
+}
+
+.cur div {
+    background-color: rgba(20, 22, 22, 0.788);
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.cursos-itens {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.cimgs {
+    background: cover;
+    width: 55vw;
+    height: 50vh;
+}
+
+/********************************************************************
+|||||||||||||||||||||||||||||||| #Ate aqui Cursos||||||||||||||||||||                           
+*********************************************************************/
+/********************************************************************
+|||||||||||||||||||||||||||||||| #About Section||||||||||||||||||||                           
+*********************************************************************/
+.About-section-bg {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(53, 110, 233, 0.781);
+    border-top: 2px solid white;
+}
+
+.About-section-title {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 6%;
+
+}
+
+
+
+.About-section-bg h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.About-section-title h3 span {
+    color: #05386b;
+}
+
+
+
+
+.About-section-bg .info {
+    font-family: var(--Lexend);
+    font-size: 20px;
+    text-align: center;
+    width: 60vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+
+.info .txt {
+    color: white;
+}
+
+.imagens {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 5%;
+    background-size: cover;
+    width: 55vw;
+    height: 55vh;
+}
+
+.imgs {
+    width: 55vw;
+    height: 55vh;
+}
+
+
+/********************************************************************
+  ||||||||||||||||||||||||#About Section ate aqui||||||||||||||||||||                           
+  *********************************************************************/
+/*--==================================++++++++++=====================================--*/
+/*--==================================++++++++++=====================================--*/
+/*--=====================================My Projects=================================--*/
+.projetos {
+    /*
+    background: linear-gradient(53.13deg, #0a596d 51.04%, #059499 51.05%);*/
+    /*background-color: #6b4c31;*/
+    background-color: rgba(53, 110, 233, 0.781);
+    border-top: 2px solid white;
+
+}
+
+/*
+.projetos {
+    padding-top: 93px;
+}
+
+.projetos h2,
+.projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+    color:white;
+}
+
+.projectbtn {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.575);
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.projectbtn:hover {
+    background-color: #0e0d0d;
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.pro {
+    background-color: #C4C4C4;
+    height: 215px;
+    width: 310px;
+    border-radius: 20px;
+   
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro:hover {
+    letter-spacing: 5px;
+}
+
+.pro div {
+    background-color: rgba(20, 22, 22, 0.788);
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+*/
+.projetos {
+    padding-top: 93px;
+}
+
+.projetos h2,
+.projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.575);
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #0e0d0d;
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.pro {
+    background-color: #C4C4C4;
+    height: 215px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro:hover {
+    letter-spacing: 5px;
+}
+
+.pro div {
+    background-color: rgba(20, 22, 22, 0.788);
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width:950px) {
+    .pro {
+        max-width: 300px;
+    }
+
+}
+
+/********************************************************************
+|||||||||||||||||||||||||||||||| #Contant Section||||||||||||||||||||                           
+*********************************************************************/
+
+.contact-section-bg {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(53, 110, 233, 0.781);
+    border-top: 2px solid white;
+
+}
+
+.contact-section-title {
+    text-align: center;
+    margin-top: 11%;
+    margin-left: 6%;
+
+}
+
+
+.contact-section-title h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contact-section-title h3 span {
+    color: #05386b;
+}
+
+.contact-section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact-section-bg .column {
+    float: left;
+    width: 45%;
+    height: 35vh;
+
+}
+
+.contact-section-bg .row {
+    background-color: transparent;
+    align-items: center;
+    width: 75%;
+    height: 10vh;
+    display: table;
+    margin-left: 17%;
+    margin-top: 2%;
+}
+
+.contact-section-bg .info {
+    padding: 40px 40px;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 10%;
+
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    height: 55px;
+    border: 2px solid white;
+    background-color: rgba(34, 34, 36, 0.781);
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    text-align: center;
+
+
+
+}
+
+.contact-section-bg .column i {
+    font-size: 55vh;
+    color: #ffffff;
+
+    margin-bottom: -15px;
+}
+
+.contact-section-bg .info h4 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-section-bg .info p {
+    color: white;
+    font-size: 15px;
+}
+
+/********************************************************************
+  ||||||||||||||||||||||||#Contact Section ate aqui||||||||||||||||||||                           
+  *********************************************************************/
+
+
+/* ----------------- Footer --------------------- */
+
+footer.footer {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+footer.footer .rights {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    font-family: var(--Josefin);
+    font-size: 15px;
+    position: fixed;
+}
+
+
+footer.footer .rights h4 .kazira {
+    color: #a1c4fd;
+    font-size: 15px;
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 35%;
+}
+
+footer.footer .move-up span {
+    background-color: rgba(23, 26, 29, 0.8);
+}
+
+footer.footer .move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ---------x------- Footer ----------x---------- */

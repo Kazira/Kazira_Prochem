@@ -1,0 +1,533 @@
+
+@import url('../css/fonts.css');
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.nav{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 0 3rem;
+    height: 0rem;
+    width: 1300px;
+    min-height: 10vh;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    height: 57%;
+    margin-left: 10%;
+    left: 20px;
+    /*background-color: rgba(53, 3, 3, 0.966);
+    */width: 100%;
+}
+
+.nav .nav-items .nav-link{
+   
+    padding: 1.4rem 1rem;
+    font-size: 1.1rem;
+   
+    font-family: var(--Abel);
+    min-height: -5vh;
+    /*background-color: rgba(42, 117, 114, 0.966);*/
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: rgba(53, 110, 233, 0.781);
+    
+    cursor: pointer;
+}
+
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .btnlogin {
+    
+    
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    transition: ease-in-out 0.3s;
+
+    padding: 5px  5px 5px 5px;
+    height: 35px;
+    width: 8vw;
+    margin-left: 17%;
+    margin-top: 1%;
+    
+    color: white;
+    background-color: rgba(53, 110, 233, 0.781);
+  
+    transition: ease-in-out 0.3s;
+    
+   
+}
+
+.nav .btnlogin:hover
+{
+    cursor: pointer;
+    background-color: rgba(53, 110, 233, 0.589);
+}
+
+.nav .nav-brand .prohemlogo
+{
+    margin-left: 10%;
+    padding: 0 1rem;
+    height: 0rem;
+    min-height: 10vh;
+}
+
+.nav .social{
+    padding: 1.4rem 0
+}
+
+.nav i{
+    padding: 0 .2rem;
+      color: #ffffff;
+}
+
+.nav .social i:hover{
+    color: #1d1b1b;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+  /***************************
+  Meu Form
+  ****************************/
+
+  
+form input.btn_submit:hover {
+    background-color: rgba(25, 27, 29, 0.8);
+    border: 1px solid rgba(25, 27, 29, 0.8);
+    color: #ffffff;
+    font-size: 15px;
+   
+}
+
+.form {
+    align-items: center;
+   
+    margin-left: -10%;
+    margin-bottom: -40%;
+    
+    
+}
+.form input[type=text] {
+     
+    border: 0 none;
+    outline: 0;
+    margin-right: 12%;
+    height: 50px;
+    width: 250%;
+    background-color: #ffffff;
+    font-size: 15px;
+    
+}
+.form input[type=submit]{
+  border: 0 none;
+    outline: 0;
+      background-color: rgba(23, 26, 29, 0.8);
+      transition: background-color .5s;     
+      color: #fff;
+      
+      width: 94vh;
+      height: 68px;
+      cursor: pointer;
+     
+      right: 20px;
+      margin-top: 0vh;
+      margin-left: 1vh;
+      font-size: 15px;
+    
+     
+    
+}
+
+.form textarea.TextMessage  {
+
+    border: 0 none;
+    outline: 0;
+    margin-right: 12%;
+    height: 40vh;
+    width: 93vh;
+    background-color: #ffffff;
+  
+    margin-top: 5vh;
+    margin-left: 1vh;
+    font-size: 17px;
+    font-family: var(--Abel);
+   
+}
+
+.label-input {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+
+
+/******************************
+Ate aqui
+*******************************/
+
+
+/********************************************************************
+|||||||||||||||||||||||||||||||| #About Section||||||||||||||||||||                           
+*********************************************************************/
+
+ 
+/*parte da panel principal onde se encontra tudo*/
+.pnlprincipal {
+
+    /*background: url('../assets/1.png');
+    
+    background-size: cover;*/
+    background-color: rgb(79, 79, 116);
+    height: 99vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+    
+}
+
+
+.second-column{
+    
+    background-color:#580303 ; opacity:0.9;
+    width: 30%;
+    height: 65%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    left: 50%;
+    
+    /*ate aqui*/
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary {
+    color: rgb(255, 255, 255);
+    
+}
+.title-second {
+    color: #0d5668;
+}
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: #fff;
+}
+.description-second {
+    color: #0a0a0a;
+}
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+/*bottons*/
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #414242;
+}
+  .btn_login {
+    background-color: #0d5668;
+    border: 1px solid #0d5668;
+    transition: background-color .5s;
+    
+
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self:center;
+    border: none;
+    
+  
+  
+}
+.btn_login:hover {
+    background-color: #fff;
+    border: 1px solid #3b5f68;
+    color: #414242;
+   
+}
+
+form button {
+    /*untill bottons here*/
+    height: 45px;
+    width: 10%;
+    border: none;
+    background-color: #161718;
+    float: left;
+    display: inline-block;
+    
+}
+
+.first-content {
+    display: flex;
+    
+}
+.first-content .second-column {
+    z-index: 11;
+    
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+   
+}
+.form {
+    /*textbox*/
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height:45%;
+    
+}
+.form input {
+    /*textbox*/
+    height: 32px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify {
+    color: #0e7e86;
+    padding: 0 5px;
+}
+
+/* second content*/
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+
+.panelbaixo {
+    color: #34495e;
+    font-size: 10px;
+    width: cover;
+	margin: 10px 0;
+	background: white;
+    text-align: center;
+    
+}
+
+
+
+.footer{
+    padding: 0 2rem;
+    height: 3rem;
+    
+
+    position: relative;
+    color: #ffffff;
+    font-size: 10px;
+    
+
+    margin-top: -5%;
+	background: #0d5668;
+    text-align: center;
+}
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+
+
+footer.footer .rights{
+    background-color: rgba(23, 26, 29, 0.8);
+    justify-content: center;
+    font-family: var(--Josefin);
+    font-size: 15px;
+}
+
+
+footer.footer .rights h4 .kazira{
+    color:#a1c4fd;
+    font-size: 15px;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 35%;
+}
+
+footer.footer .move-up span{
+    background-color: rgba(23, 26, 29, 0.8);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ---------x------- Footer ----------x---------- */
