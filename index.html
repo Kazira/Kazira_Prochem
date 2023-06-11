@@ -2,303 +2,242 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>www.prohem.com</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO.CHEM</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!--=====================================Minhas CSS||JS======================================-->
+    <link rel="stylesheet" href="assets/css/edvalter.css">
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="./css/icons.css">
 
-  <!-- Custom Style   -->
-  <link rel="stylesheet" href="css/kazira.css">
+    <!--=====================================Minhas CSS||JS======================================-->
 </head>
 
 <body>
-  <!-- ----------------------------  Navigation ---------------------------------------------- -->
 
-  <!--<div>
-  
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
-    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <div>
+        <!--=====================================NavBar======================================-->
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+        <div class="barra">
+            <div class="menu-centro">
+                <div class="barra-conteiner centralizador">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/img/3.png" class="prohemlogo" alt="logo" /></a>
+                    </div>
+                    <nav class="direita">
+                        <ul onclick="getElementById('close-menu').checked=false;">
+                            <li>
+                                <i class="far  fa fa-home  icon-modify"></i>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Cursos">cursos</a>
+                            </li>
+                            <li>
+                                <a href="#AboutUs">Quem Somos?</a>
+                            </li>
+                            <li>
+                                <a href="#projetos">Actividades</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contactos</a>
+                            </li>
+                        </ul>
 
-    <div class="barra">
+                    </nav>
+                    <button class="btnlogin" onclick="window.open('login.php','_self')">Login/Registrar</button>
+                    <!--<button class="btnlogin2" onclick="window.open('login.php','_self')">Login</button>
+                    <button class="btnregistrar" onclick="window.open('login.php','_self')">Registrar</button> -->
+                    <button class="btnregistrar" onclick="window.open('login.php','_self')">Registrar</button>
+                </div>
 
-      <div class="menu-centro">
-        <div class="barra-conteiner centralizador">
-
-          <div class="logo esquerda">
-            <a href="index.html"><img src="assets/img/kazira.png" alt="logo" /></a>
-          </div>
-
-          <nav class="direita">
-
-            <ul onclick="getElementById('close-menu').checked=false;">
-              <li>
-                <i class="far  fa fa-home  icon-modify"></i>
-                <a href="#inicio">Home</a>
-
-              </li>
-              <li>
-                <i class="far fa-user icon-modify"></i>
-                <a href="#sobre-mimcv">About Me</a>
-              </li>
-              <li>
-                <i class="far fa fa-book  icon-modify"></i>
-                <a href="#projetos">Projects</a>
-              </li>
-              <li>
-                <i class="fas fa-exclamation-circle  icon-modify"></i>
-                <a href="#sobre-mim">Kazira</a>
-              </li>
-            </ul>
-          </nav>
-
-        </div>
-
-      </div>
-
-    </div>-->
-
-  <!-- ------------x---------------  Navigation --------------------------x------------------- -->
-  <nav class="nav">
-
-
-
-    <div class="menu-centro">
-      <div class="barra-conteiner centralizador">
-
-        <div class="nav-menu flex-row">
-
-          <div class="nav-brand">
-            <img class="prohemlogo" src="assets/3.png">
-          </div>
-
-          <div class="direita">
-
-            <ul onclick="getElementById('close-menu').checked=false;" class="nav-items">
-
-              <li class="nav-link">
-                <i class="far  fa fa-home  icon-modify"></i>
-                <a href="#">Home</a>
-              </li>
-              <li class="nav-link">
-                <i class="far fa fa-atlas icon-modify"></i>
-                <a href="#Cursos">Cursos</a>
-              </li>
-
-              <li class="nav-link">
-                <i class="far fa fa-tools icon-modify"></i>
-                <a href="#AboutUs">Quem Somos?</a>
-              </li>
-
-              <li class="nav-link">
-                <i class="far fa fa-tools icon-modify"></i>
-                <a href="#projetos">Actividades</a>
-              </li>
-
-              <li class="nav-link">
-                <i class="far fa fa-tools icon-modify"></i>
-                <a href="#contact">Contactos</a>
-              </li>
-
-            </ul>
-
-
-          </div>
-
-          <button class="btnlogin" onclick="window.open('login.php','_self')">Login/Registrar</button>
-
-
+            </div>
 
         </div>
-      </div>
+
+
+        <!--=====================================NavBar Ate aqui=============================-->
+        <!--==================================++++++++++=====================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--=====================================Section 1===================================-->
+        <!-- primeira tela -->
+        <section class="site-title" id="inicio">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100"></div>
+        </section>
+        <!-- primeira tela -->
+        <!--===============================Section 1 Ate aqui================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--==================================++++++++++=====================================-->
+        <!--====================================My Cursos==================================-->
+        <!-- Cursos -->
+        <section id="Cursos" class="cursos-section-bg">
+            <div class="container-fluid">
+
+                <div class="cursos-section-title">
+                    <h3>Nossos<span>Cursos</span></h3>
+                </div>
+
+                <div class="cursos-itens">
+
+                    <div class="cur1" onclick="window.open('login.php','_self')">
+                        <img class="cimgs" src="./assets/img/curso1.png">
+                    </div>
+
+                    <div class="cur" onclick="window.open('login.php','_self')">
+                        <img class="cimgs" src="./assets/img/curso1.png">
+                    </div>
+
+                    <div class="cur">
+                        <img class="cimgs" src="./assets/img/curso1.png">
+                    </div>
+
+                    <div class="cur">
+                        <img class="cimgs" src="./assets/img/curso1.png">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
     </div>
-  </nav>
 
 
-  <!------<div class="social text-gray">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/_k_a_z_i_r_a_?r=nametag"><i class="fab fa-instagram"></i></a>
+    <div class="pro escondido">
+        <div class="breve">
+            <p>Soon</p>
+        </div>
+    </div>
 
-          </div>----------------------- Main Site Section ------------------------------>
+    <div class="pro escondido">
+        <div class="breve">
+            <p>Soon</p>
+        </div>
+    </div>
 
-  <main>
-    <section class="site-title">
-      <!---- <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-                <h3>Trade your car with US</h3>
-                <h1>Get in touch with Us. </h1>
-                <button class="btn">Contact</button>
-            </div>--->
+    <div class="pro escondido">
+        <div class="breve">
+            <p>Soon</p>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    </div>
+
+
     </section>
-    <main id="main">
-      <!-- ---------------------- Site Content -------------------------->
 
 
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--====================================My Cursos==================================-->
-      <!-- Cursos -->
-      <section id="Cursos" class="cursos-section-bg">
+    <!--================================My Cursos Ate aqui================================-->
+    <!--==================================++++++++++=====================================-->
+    <!--==================================++++++++++=====================================-->
+    <!--==================================++++++++++=====================================-->
+    <!--===================================AboutUs Section===================================-->
+    <section id="AboutUs" class="About-section-bg">
         <div class="container-fluid">
 
-          <div class="cursos-section-title">
-            <h3>Nossos<span>Cursos</span></h3>
-          </div>
-
-          <div class="cursos-itens">
-
-            <div class="cur" onclick="window.open('login.php','_self')">
-              <img class="cimgs" src="./assets/curso1.png">
+            <div class="About-section-title">
+                <h3>Sobre<span>Nós</span></h3>
             </div>
 
-            <div class="cur">
-              <img class="cimgs" src="./assets/curso1.png">
+            <div class="info">
+                <p class="txt">PROchem é uma start up que trabalha na area de engenharia,com maior ênfase
+                    na engenharia Quimica trazendo soluções dos variados problemas que os estudantes enfrentam
+                    nessa vas area de conhecimento
+                <p>
             </div>
+            <div class="imagens">
 
-            <div class="cur">
-              <img class="cimgs" src="./assets/curso1.png">
+                <div class="visao">
+                    <img class="imgs" src="./assets/img/visao.PNG">
+                </div>
             </div>
-
-          </div>
-
-
         </div>
-
-
-        </div>
-
-
-        <div class="pro escondido">
-          <div class="breve">
-            <p>Soon</p>
-          </div>
-        </div>
-
-        <div class="pro escondido">
-          <div class="breve">
-            <p>Soon</p>
-          </div>
-        </div>
-
-        <div class="pro escondido">
-          <div class="breve">
-            <p>Soon</p>
-          </div>
-        </div>
-
-        </div>
-
-
-
-
-        </div>
-
-
-      </section>
-
-
-      <!--================================My Cursos Ate aqui================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--====================================My Activities==================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--====================================My Activities==================================-->
-      <!-- Projetos -->
-      <section id="projetos">
+    </section>
+    <!--===================================Ate aqui AboutUs Section=============================-->
+    <!--====================================My Projects==================================-->
+    <!-- Projetos -->
+    <section id="projetos">
         <div class="centralizador projetos">
-          <h2 class="project">Actividades</h2>
-          <div class="projetos-itens">
-            <div class="pro">
+            <div class="actividade-section-title">
+                <h3>Actividades<span>Prochem</span></h3>
+            </div>
+            <div class="projetos-itens">
+                <div class="pro">
 
-              <video width="320" height="240" controls>
-                <source src="assets/mp4/restaurante.mp4" type="video/mp4">
-                <source src="assets/mp4/restaurante.mp4" type="video/ogg">
+                    <video width="320" height="240" controls>
+                        <source src="assets/mp4/restaurante.mp4" type="video/mp4">
+                        <source src="assets/mp4/restaurante.mp4" type="video/ogg">
 
-              </video>
+                    </video>
+                </div>
+
+                <div class="pro">
+                    <video width="320" height="240" controls>
+                        <source src="assets/mp4/k.mp4" type="video/mp4">
+                        <source src="assets/mp4/k.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="pro">
+                    <video width="320" height="240" controls>
+                        <source src="assets/mp4/Login.mp4" type="video/mp4">
+                        <source src="assets/mp4/Login.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="pro escondido">
+                    <div class="breve">
+                        <p>Soon</p>
+                    </div>
+                </div>
+                <div class="pro escondido">
+                    <div class="breve">
+                        <p>Soon</p>
+                    </div>
+                </div>
+                <div class="pro escondido">
+                    <div class="breve">
+                        <p>Soon</p>
+                    </div>
+                </div>
+
+
+
             </div>
 
-            <div class="pro">
-              <video width="320" height="240" controls>
-                <source src="assets/mp4/k.mp4" type="video/mp4">
-                <source src="assets/mp4/k.mp4" type="video/ogg">
-                Your browser does not support the video tag.
-              </video>
+            <div class="github-link">
+                <button>See More</button>
             </div>
-            <div class="pro">
-              <video width="320" height="240" controls>
-                <source src="assets/mp4/Login.mp4" type="video/mp4">
-                <source src="assets/mp4/Login.mp4" type="video/ogg">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="pro escondido">
-              <div class="breve">
-                <p>Soon</p>
-              </div>
-            </div>
-            <div class="pro escondido">
-              <div class="breve">
-                <p>Soon</p>
-              </div>
-            </div>
-            <div class="pro escondido">
-              <div class="breve">
-                <p>Soon</p>
-              </div>
-            </div>
-
-
-
-          </div>
-
-          <div class="github-link">
-            <button class="projectbtn">See More</button>
-
-          </div>
         </div>
-      </section>
-      <!--================================My Cursos Ate aqui================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
-      <!--==================================++++++++++=====================================-->
+    </section>
+    <!--================================My Projects Ate aqui================================-->
+    <!--==================================++++++++++=====================================-->
+    <!--==================================++++++++++=====================================-->
+    <!--==================================++++++++++=====================================-->
+    <!--====================================My Projects==================================-->
 
-      <!--===================================AboutUs Section===================================-->
-      <section id="AboutUs" class="About-section-bg">
-        <div class="container-fluid">
 
-          <div class="About-section-title">
-            <h3>Sobre<span>Nós</span></h3>
-          </div>
-
-          <div class="info">
-            <p class="txt">PROchem é uma start up que trabalha na area de engenharia,com maior ênfase
-              na engenharia Quimica trazendo soluções dos variados problemas que os estudantes enfrentam
-              nessa vas area de conhecimento
-            <p>
-          </div>
-          <div class="imagens">
-
-            <div class="visao">
-              <img class="imgs" src="./assets/visao.PNG">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--===================================Ate aqui AboutUs Section=============================-->
 
       <!--===================================Contact Section======================================-->
-      <section id="contact" class="contact-section-bg">
+      <section id="contact" class="contact section-bg">
 
         <div class="container-fluid">
 
-          <div class="contact-section-title">
-            <h3>Manter Contacto<span></span></h3>
-            <p>Contacte-nos</p>
+          <div class="section-title">
+            <h3>Get In Touch With <span>Us</span></h3>
+            <p>Contact Us</p>
           </div>
 
 
@@ -306,24 +245,27 @@
 
             <div class="column">
               <div class="col-md-6 info d-flex flex-column align-items-stretch">
-
+                <i class="fa fa-map"></i>
                 <h4>Endereço</h4>
-                <p>Futungo de belas,luanda<br>Angola</p>
+                <p>Futungo de belas,luanda
+                    <br>Angola</p>
               </div>
             </div>
 
             <div class="column">
               <div class="col-md-6 info d-flex flex-column align-items-stretch">
-
-                <h4>Telefone</h4>
+                <i class="fa fa-phone"></i>
+                <h4>Telephone</h4>
                 <p>+244 946 504 094<br></p>
               </div>
             </div>
+          </div>
 
+          <div class="row">
 
             <div class="column">
               <div class="col-md-6 info d-flex flex-column align-items-stretch">
-
+                <i class="fa fa-envelope"></i>
                 <h4>Email</h4>
                 <p>prohemstartup@gmail.com<br></p>
               </div>
@@ -331,14 +273,13 @@
 
             <div class="column">
               <div class="col-md-6 info d-flex flex-column align-items-stretch">
-
+                <i class="far fa-clock"></i>
                 <h4>Horas de Trabalho</h4>
                 <p>Seg - Sab: 8AM as 8PM<br></p>
               </div>
             </div>
           </div>
-
-
+         
         </div>
 
         </div>
@@ -346,19 +287,8 @@
       <!--===================================Ate aquiContact Section===============================-->
 
 
+
 </body>
 <script src="assets/js/edvalter.js"></script>
-
-<footer class="footer">
-
-  <div class="rights flex-row">
-    <h4 class="text-gray">
-      <a>Copyright ©2022 All rights reserved |</a><a class="kazira"
-        href="https://www.instagram.com/_k_a_z_i_r_a_?r=nametag"> Kazira©</a>
-
-    </h4>
-  </div>
-</footer>
-
 
 </html>
